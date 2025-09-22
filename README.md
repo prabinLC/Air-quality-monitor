@@ -1,6 +1,13 @@
-# AirIQ - DIY Air Quality Monitor v1.0
+# AirIQ - DIY Air Quality Monitor
 
-A comprehensive air quality monitoring system for Raspberry Pi that tracks PM2.5, CO2, VOC, Ozone, Temperature, and Humidity levels with web dashboard and data logging.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
+[![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-Compatible-red.svg)](https://www.raspberrypi.org/)
+
+> 🌬️ A comprehensive air quality monitoring system for Raspberry Pi that tracks PM2.5, CO2, VOC, Ozone, Temperature, and Humidity levels with real-time web dashboard and data logging.
+
+![AirIQ Demo](https://img.shields.io/badge/Demo-Available-green.svg)
+![Cross Platform](https://img.shields.io/badge/Platform-Cross%20Platform-blue.svg)
 
 ## 🚀 Quick Start
 
@@ -500,5 +507,5 @@ For issues and questions:
 
 ---
 
-**Made with ❤️ for cleaner air monitoring**#   A i r - q u a l i t y - m o n i t o r  
- 
+**Made with ❤️ for cleaner air monitoring**
+
