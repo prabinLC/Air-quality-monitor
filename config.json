@@ -1,0 +1,69 @@
+{
+    "sensors": {
+        "pms5003": {
+            "enabled": true,
+            "port": "/dev/ttyUSB0",
+            "baudrate": 9600,
+            "description": "PM2.5 Particulate Matter Sensor"
+        },
+        "mhz19": {
+            "enabled": true,
+            "port": "/dev/ttyUSB1",
+            "baudrate": 9600,
+            "description": "CO2 Sensor"
+        },
+        "sgp30": {
+            "enabled": true,
+            "i2c_address": "0x58",
+            "description": "VOC and eCO2 Sensor"
+        },
+        "mq131": {
+            "enabled": true,
+            "adc_channel": 0,
+            "calibration_factor": 1.0,
+            "description": "Ozone Sensor"
+        },
+        "dht22": {
+            "enabled": true,
+            "pin": 4,
+            "description": "Temperature and Humidity Sensor"
+        }
+    },
+    "display": {
+        "enabled": true,
+        "type": "console",
+        "oled": {
+            "width": 128,
+            "height": 64,
+            "i2c_address": "0x3C"
+        }
+    },
+    "logging": {
+        "enabled": true,
+        "interval": 60,
+        "file": "air_quality_data.csv",
+        "max_file_size_mb": 100,
+        "backup_count": 5
+    },
+    "alerts": {
+        "enabled": true,
+        "pm2_5_threshold": 35,
+        "pm10_threshold": 150,
+        "co2_threshold": 1000,
+        "ozone_threshold": 100,
+        "tvoc_threshold": 1000,
+        "notification_methods": ["console", "log"]
+    },
+    "web_dashboard": {
+        "enabled": true,
+        "host": "0.0.0.0",
+        "port": 5000,
+        "secret_key": "change_this_secret_key_in_production"
+    },
+    "calibration": {
+        "pm_sensor_correction": 1.0,
+        "co2_altitude_correction": 0,
+        "temperature_offset": 0.0,
+        "humidity_offset": 0.0
+    }
+}
